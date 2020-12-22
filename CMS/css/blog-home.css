@@ -1,0 +1,321 @@
+/*!
+ * Start Bootstra` - Blog Home HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 53px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #262B37;
+    margin: 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar {
+    background-color: #333646;
+    border-bottom: 1px solid red;
+}
+
+
+/* Style the sidebar - fixed full height */
+
+.sidebar {
+    height: 100%;
+    /* width: 100%; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2F3343;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+
+/* Style sidebar links */
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+
+/* Style links on mouse-over */
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style the main content */
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+.fa-home {
+    margin-top: 60px;
+}
+
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+#sidebar {
+    margin-right: 30px;
+}
+
+.page-header {
+    color: #b87612;
+    text-align: center;
+    background-color: #252525;
+    padding: 33px;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 10px;
+}
+
+.post {
+    background-color: #f1f1f1;
+}
+
+.logo-image {
+    width: 80px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-top: 7px;
+}
+
+.post-back {
+    background-image: url('/images/background.jpg');
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.post-heading {
+    font-weight: 300;
+    font-family: Helvetica, Arial, sans-serif, 'Raleway';
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.well {
+    margin-top: 22px;
+}
+
+.post-image {
+    padding: 50px;
+}
+
+.post-image:hover {
+    box-shadow: 0px 0px 37px -6px black;
+    z-index: 200;
+}
+
+.blog-search {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.post-content {
+    color: #929292;
+    font-family: Helvetica, Arial, sans-serif, 'Open Sans';
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    vertical-align: top !important;
+    font-size: 14px !important;
+    text-align: justify;
+}
+
+.body-share {
+    background-color: #262B37;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    /* top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); */
+}
+
+.share span {
+    position: relative;
+    left: 2px;
+    top: 44px;
+    font-weight: 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.share a {
+    line-height: 50px;
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ffffff;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.share a:nth-child(1) {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 0px;
+}
+
+.share:hover a:hover,
+.share.hover a:hover {
+    color: #fff;
+}
+
+.share a:hover {
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: translateY(-50px);
+        transform-origin: 50% 50%;
+    }
+}
+
+.share a:nth-child(1):hover {
+    background-color: #61c5ec;
+}
+
+.share a:nth-child(2):hover {
+    background-color: #3B5998;
+}
+
+.share a:nth-child(3):hover {
+    background-color: #ea4335;
+}
+
+.share a:nth-child(4):hover {
+    background-color: #000000;
+}
+
+.share a:nth-child(4) {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 0px;
+}
+
+.share:hover span,
+.share.hover span {
+    opacity: 0;
+}
+
+.share:hover a,
+.share.hover a {
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #111111;
+    font-size: 28px;
+}
+
+.share:hover a:hover,
+.share.hover a:hover {
+    color: #fff;
+}
+
+.share a:hover {
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.line {
+    background: white;
+    height: 8px;
+    border-radius: 4px;
+    width: 0%;
+    position: fixed;
+    /* top: 0px; */
+}
+
+
+/* .text {
+    font-size: 35px;
+    color: lightgreen;
+    text-align: center;
+    line-height: 1em;
+} */
+
+
+/*CONTACT CARDS */
+
+.dropbtn {
+    background-color: #333646;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
